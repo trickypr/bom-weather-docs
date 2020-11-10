@@ -5,5 +5,7 @@ The current API endpoint is: https://api.weather.bom.gov.au/v1/
 
 ## Contents
  - [Location search](./api/search)
- - [Location information](./api/locationInformation)\
- 
+ - [Location information](./api/locationInformation)
+ - [Forecasts](./api/forecasts)
+ - [Observations](./api/observations)
+ - [Warnings](./api/warnings)

@@ -591,3 +591,26 @@
 }
 ```
 </details>
+
+## Rain forecast
+Returns the current forecast for rain in the area
+
+### Input
+`/locations/<geohash>/forecast/rain`
+
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint
+
+### Example output
+```JSON
+{
+  "metadata": {
+    "response_timestamp": "2020-11-10T08:10:00Z"
+  },
+  "data": {
+    "amount": null,
+    "chance": null,
+    "start_time": null,
+    "period": "PT3H"
+  }
+}
+```
