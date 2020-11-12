@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
-import CodeHighlighter from '../../components/CodeHighlighter'
+import renderer from '../../components/renderer'
 
 export default function Page({ md, title, raw }) {
   return (
@@ -12,13 +12,16 @@ export default function Page({ md, title, raw }) {
 			<Head>
 				<title>{title} | Bom Weather Docs</title>
 				<link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
 			</Head>
 
 			<Header fileContents={raw} />
 
 			<main className={styles.main}>
-				<ReactMarkdown renderers={{ code: CodeHighlighter }} allowDangerousHtml={true} >{ md }</ReactMarkdown>
+				<ReactMarkdown renderers={renderer} allowDangerousHtml={true} >{ md }</ReactMarkdown>
 			</main>
+
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> 
 		</div>
   )
 }

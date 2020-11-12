@@ -11,9 +11,7 @@ export default function Home() {
       <Head>
         <title>Bom Weather Docs</title>
         <link rel="icon" href="/favicon.ico" />
-
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> 
       </Head>
 
       <Header fileContents={Text} />
@@ -21,6 +19,8 @@ export default function Home() {
       <main className={styles.main}>
         <MarkdownWithoutHeader md={Text} />
       </main>
+
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> 
     </div>
   )
 }
