@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Bom Weather Docs</title>
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />

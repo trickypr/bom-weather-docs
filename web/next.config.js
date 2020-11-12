@@ -1,4 +1,5 @@
 module.exports = {
+	assetPrefix: process.env.ROOT_PATH || '/',
 	webpack: (config) => {
 		return Object.assign({}, config, {
 			module: Object.assign({}, config.module, {
