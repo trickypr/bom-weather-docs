@@ -1,5 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production'
+const prodRootPath = 'https://cdn.statically.io/gh/trickypr/bom-weather-docs/gh-pages/'
+
 module.exports = {
-	assetPrefix: process.env.ROOT_PATH || '/',
+	assetPrefix: isProd ? prodRootPath : '/',
 	webpack: (config) => {
 		return Object.assign({}, config, {
 			module: Object.assign({}, config.module, {
