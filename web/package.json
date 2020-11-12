@@ -1,0 +1,19 @@
+{
+  "name": "web-docs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "link-folders": "rm ./public/docs && ln -s ../docs ./public/docs",
+    "dev": "yarn link-folders && next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "next": "10.0.1",
+    "raw-loader": "^4.0.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-markdown": "^5.0.2"
+  }
+}
