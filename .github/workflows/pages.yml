@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./src
+        working-directory: ./web
 
     steps:
       - name: Checkout 🛎️
@@ -22,8 +22,8 @@ jobs:
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v1
       - run: npm install -g yarn
-      - run: cd web && yarn
-      - run: cd web && yarn build
+      - run: yarn
+      - run: yarn build
         env:
             CI: true
 
