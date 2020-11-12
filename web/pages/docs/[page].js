@@ -4,8 +4,9 @@ import Head from 'next/head'
 
 import styles from '../../styles/Home.module.css'
 import Header from '../../components/header'
+import CodeHighlighter from '../../components/CodeHighlighter'
 
-export default function Page({ md, title }) {
+export default function Page({ md, title, raw }) {
   return (
 		<div>
 			<Head>
@@ -13,10 +14,10 @@ export default function Page({ md, title }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<Header fileContents={md} />
+			<Header fileContents={raw} />
 
 			<main className={styles.main}>
-				<ReactMarkdown>{ md }</ReactMarkdown>
+				<ReactMarkdown renderers={{ code: CodeHighlighter }} allowDangerousHtml={true} >{ md }</ReactMarkdown>
 			</main>
 		</div>
   )
@@ -30,12 +31,13 @@ export async function getStaticProps({ ...ctx }) {
 	const headerEnd = content.indexOf('\n', headerPosition)
 
 	const headerText = content.substring(headerPosition, headerEnd)
-	const markdown = content.substring(headerEnd)
-
+  const markdown = content.substring(headerEnd)
+  
   return {
     props: {
 			title: headerText,
-			md: markdown
+      md: markdown,
+      raw: content
     },
   }
 }
