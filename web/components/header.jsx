@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from './Header.module.css'
 
 export default function Header({ fileContents }) {
@@ -9,7 +10,7 @@ export default function Header({ fileContents }) {
 	return (
 		<header className={styles.header}>
 			<ul className={styles.nav}>
-				<li><a href="/">Home</a></li>
+				<li><Link href="/"><a>Home</a></Link></li>
 			</ul>
 
 			<h1>{headerText}</h1>
