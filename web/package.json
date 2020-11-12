@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "link-folders": "rm ./public/docs && ln -s ../docs ./public/docs",
-    "dev": "yarn link-folders && next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "file-loader": "^6.2.0",
+    "glob": "^7.1.6",
     "next": "10.0.1",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",

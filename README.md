@@ -4,8 +4,8 @@ Unofficial documentation for the new bom http api extracted from the api.weather
 The current API endpoint is: https://api.weather.bom.gov.au/v1/
 
 ## Contents
- - [Location search](./api/search)
- - [Location information](./api/locationInformation)
- - [Forecasts](./api/forecasts)
- - [Observations](./api/observations)
- - [Warnings](./api/warnings)
+ - [Location search](./docs/search)
+ - [Location information](./docs/locationInformation)
+ - [Forecasts](./docs/forecasts)
+ - [Observations](./docs/observations)
+ - [Warnings](./docs/warnings)
