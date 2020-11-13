@@ -10,7 +10,7 @@ export default function Header({ fileContents }) {
 	return (
 		<header className={styles.header}>
 			<ul className={styles.nav}>
-				<li><Link href="/"><a>Home</a></Link></li>
+				<li><Link href="/" prefetch><a>Home</a></Link></li>
 			</ul>
 
 			<h1>{headerText}</h1>
