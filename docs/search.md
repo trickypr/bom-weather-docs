@@ -3,6 +3,7 @@ This lets you pass in a string name and returns all of the possible locations th
 
 ## Input: 
 `locations?search=<location>`
+`location`: The search string. Must be 3 or more characters long otherwise you will get an `Access Denied` error.
 
 ## Example output
 ```json
