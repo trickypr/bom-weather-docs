@@ -4,7 +4,7 @@ export default function MdLink({ href, children }) {
   if (href) {
     if (href.startsWith('./')) {
       return (
-       <Link href={href} prefetch><a>{ children }</a></Link>
+       <Link href={href.replace('.md', '')} prefetch><a>{ children }</a></Link>
       )
     }
   }
