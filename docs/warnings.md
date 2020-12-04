@@ -4,7 +4,7 @@ Get any weather warnings (e.g. flooding warning, hail warning) for your location
 ## Input: 
 `/locations/<geohash>/warnings`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint  
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
 
 ## Example output
 ```json

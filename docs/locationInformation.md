@@ -4,7 +4,7 @@ Returns some general data from the sever related to the location. This doesn't c
 ## Input: 
 `/locations/<geohash>`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint  
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
 
 ## Example output
 ```json

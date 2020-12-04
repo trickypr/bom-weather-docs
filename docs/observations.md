@@ -4,7 +4,7 @@ Returns the observations of a location
 ## Input: 
 `/locations/<geohash>/observations`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint  
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
 
 ## Example output
 ```json

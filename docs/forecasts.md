@@ -5,7 +5,7 @@
 ### Input
 `/locations/<geohash>/forecasts/daily`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint  
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
 
 
 ### Example output
@@ -254,7 +254,7 @@
 ### Input
 `/locations/<geohash>/forecasts/3-hourly`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint
 
 ### Example output
 [Jump to finish](#rain)
@@ -599,7 +599,7 @@ Returns the current forecast for rain in the area
 ### Input
 `/locations/<geohash>/forecast/rain`
 
-`geohash`: A unique ID for this location, can be retrieved using the [search](./search) endpoint
+`geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint
 
 ### Example output
 ```json
