@@ -6,7 +6,7 @@ This lets you pass in a string name and returns all of the possible locations th
 
 `location`: The search string. Must be 3 or more characters long otherwise you will get an `Access Denied` error.
 
-## Request type
+## Response type
 ```ts
 interface SearchResponse {
   metadata: {
