@@ -19,13 +19,13 @@ interface ObservationResponse {
     rain_since_9am?: number
     humidity?: number
     wind?: {
-      speed_kilometre: number
-      speed_knot: number
-      direction: string
+      speed_kilometre?: number
+      speed_knot?: number
+      direction?: string
     }
     gust?: {
-      speed_kilometre: number
-      speed_knot: number
+      speed_kilometre?: number
+      speed_knot?: number
     }
     station?: {
       bom_id: string
