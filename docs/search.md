@@ -6,6 +6,22 @@ This lets you pass in a string name and returns all of the possible locations th
 
 `location`: The search string. Must be 3 or more characters long otherwise you will get an `Access Denied` error.
 
+## Request type
+```ts
+interface SearchResponse {
+  metadata: {
+    response_timestamp: string // Can be converted to Date
+  }
+  data: Array<{
+    geohash: string
+    id: string
+    name: string
+    postcode: string
+    state: string
+  }>
+}
+```
+
 ## Example output
 ```json
 {
