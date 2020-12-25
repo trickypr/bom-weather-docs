@@ -1,4 +1,6 @@
 import ReactMarkdown from 'react-markdown'
+import toc from 'remark-toc'
+
 import renderer from './renderer'
 
 export default function markdownWithoutHeader({ md }) {
@@ -8,6 +10,6 @@ export default function markdownWithoutHeader({ md }) {
 	const markdown = md.substring(headerEnd)
 
 	return (
-		<ReactMarkdown renderers={renderer} >{markdown}</ReactMarkdown>
+		<ReactMarkdown renderers={renderer} plugins={[toc]}>{markdown}</ReactMarkdown>
 	)
 }
