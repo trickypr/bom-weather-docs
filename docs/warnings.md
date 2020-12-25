@@ -1,6 +1,8 @@
 # Warnings
 Get any weather warnings (e.g. flooding warning, hail warning) for your location
 
+## Table of Contents
+
 ## Input: 
 `/locations/<geohash>/warnings`
 

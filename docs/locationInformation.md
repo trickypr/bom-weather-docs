@@ -1,6 +1,8 @@
 # Location information
 Returns some general data from the sever related to the location. This doesn't contain any weather data information. 
 
+## Table of Contents
+
 ## Input: 
 `/locations/<geohash>`
 

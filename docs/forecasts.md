@@ -1,12 +1,13 @@
 # Forecast information
 
+## Table of Contents
+
 ## Daily
 
 ### Input
 `/locations/<geohash>/forecasts/daily`
 
 `geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
-
 
 ### Example output
 [Jump to finish](#3-hourly)

@@ -1,6 +1,8 @@
 # Observations
 Returns the observations of a location
 
+## Table of Contents
+
 ## Input: 
 `/locations/<geohash>/observations`
 

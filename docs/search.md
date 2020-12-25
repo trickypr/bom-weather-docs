@@ -1,6 +1,8 @@
 # Search
 This lets you pass in a string name and returns all of the possible locations that match your search.
 
+## Table of Contents
+
 ## Input: 
 `locations?search=<location>`
 
