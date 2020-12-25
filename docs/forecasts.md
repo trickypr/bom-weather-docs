@@ -9,6 +9,52 @@
 
 `geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint  
 
+### Response type
+```ts
+interface ForecastItem {
+  rain: {
+    amount: {
+      min?: number
+      max?: number
+      units?: string
+    }
+    chance?: number
+  }
+  uv: {
+    category?: string
+    end_time?: string
+    max_index?: number
+    start_time: string
+  }
+  now?: {
+    is_night: boolean
+		now_label: string
+		later_label: string
+		temp_now: number
+		temp_later: number
+  }
+
+  date: string
+  temp_max?: string
+  temp_min?: string
+
+  extended_text: string
+  icon_descriptor: string
+  short_text: string
+  fire_danger?: string
+}
+
+interface ForecastRequest {
+  data: Array<ForecastItem>
+  metadata: {
+    response_timestamp: string
+    issue_time: string
+    forecast_region: string
+    forecast_type: string
+  }
+}
+```
+
 ### Example output
 [Jump to finish](#3-hourly)
 
