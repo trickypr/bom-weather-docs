@@ -10,11 +10,12 @@
   "dependencies": {
     "file-loader": "^6.2.0",
     "glob": "^7.1.6",
-    "next": "10.0.1",
+    "next": "10.0.4",
     "raw-loader": "^4.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-markdown": "^5.0.2",
-    "react-syntax-highlighter": "^15.3.0"
+    "react-markdown": "^5.0.3",
+    "react-syntax-highlighter": "^15.4.3",
+    "remark-toc": "^7.0.0"
   }
 }
