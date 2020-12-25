@@ -681,6 +681,21 @@ Returns the current forecast for rain in the area
 
 `geohash`: A unique ID for this location, can be retrieved using the [search](./search.md) endpoint
 
+### Response type
+```ts
+interface ForecastResponse {
+  metadata: {
+    response_timestamp: string
+  }
+  data: {
+    amount?: number
+    chance?: number
+    start_time?: string
+    period: string
+  }
+}
+```
+
 ### Example output
 ```json
 {
