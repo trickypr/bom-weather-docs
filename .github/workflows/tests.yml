@@ -2,7 +2,7 @@ name: Deploy to web
 on: 
   push:
   schedule:
-  - chron: '15 14 * * 3'
+  - cron: '15 14 * * 3'
 
 jobs:
   build-and-deploy:
