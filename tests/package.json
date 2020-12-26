@@ -1,0 +1,24 @@
+{
+  "name": "bom-api-tests",
+  "version": "1.0.0",
+  "description": "A set of tests to ensure continued compadibility with the bom api",
+  "main": "index.js",
+  "repository": "https://github.com/trickypr/bom-weather-docs",
+  "author": "TrickyPR",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "@ava/typescript": "^1.1.1",
+    "ava": "^3.14.0"
+  },
+  "ava": {
+    "typescript": {
+      "rewritePaths": {
+        "src/": "build/"
+      }
+    }
+  }
+}
