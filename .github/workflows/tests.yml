@@ -17,12 +17,6 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Cache  💾
-        uses: actions/cache@v2
-        with:
-          path: ${{ github.workspace }}/web/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}
-
       - name: Install 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v1
       - run: npm install -g yarn
