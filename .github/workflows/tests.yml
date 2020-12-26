@@ -1,11 +1,11 @@
-name: Deploy to web
+name: Test API endpoint for changes
 on: 
   push:
   schedule:
   - cron: '15 14 * * 3'
 
 jobs:
-  build-and-deploy:
+  test-api:
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -26,7 +26,7 @@ jobs:
       - name: Install 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         uses: actions/setup-node@v1
       - run: npm install -g yarn
-      - run: yarn
+      - run: yarn install --frozen-lockfile
 
       - name: Test 🧪
         run: yarn test
