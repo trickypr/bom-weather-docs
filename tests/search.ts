@@ -1,10 +1,5 @@
-import test, { ExecutionContext } from 'ava'
-import { get } from './constants'
-
-function assert_attributes<T>(t: ExecutionContext, value: T, expected: T) {
-  t.is(value, expected)
-  t.is(typeof value, typeof expected)
-}
+import test from 'ava'
+import { get, assert_attributes } from './constants'
 
 test('Canberra', async t => {
   const response = await get('locations?search=Canberra')
