@@ -4,19 +4,20 @@
 }
 
 .footer a {
-	background: linear-gradient(
-			to bottom, var(--link-color) 0%,
-			var(--link-color) 100%
-		);
-	background-position: 0 100%;
-	background-repeat: repeat-x;
-	background-size: 4px 4px;
-	color: #000;
-	text-decoration: none;
-	transition: background-size .2s ease-in-out;
-	padding: 0 4px;
+  background: linear-gradient(
+    to bottom,
+    var(--link-color) 0%,
+    var(--link-color) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-size 0.2s ease-in-out;
+  padding: 0 4px;
 }
 
 .footer a:hover {
-	background-size: 4px 50px;
+  background-size: 4px 50px;
 }

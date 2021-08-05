@@ -14,7 +14,7 @@
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
-  color: #000;
+  color: var(--text-color);
   text-decoration: none;
   transition: background-size 0.2s ease-in-out;
   padding: 0 4px;

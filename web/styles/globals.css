@@ -1,13 +1,25 @@
 :root {
-	--link-color: #4296C750
+  --link-color: #4296c750;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #ffffff;
+    --bg-color: #3a3a3a;
+  }
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 a {
