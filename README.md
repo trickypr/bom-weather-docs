@@ -18,4 +18,4 @@ The data provided by BoM is under copyright. Their copyright notice is available
 
 ---
 
-© [TrickyPR](https://github.com/trickypr) 2020-2021 under [CC0 1.0 Universal](https://github.com/trickypr/bom-weather-docs/blob/main/LICENSE).
+© [TrickyPR](https://github.com/trickypr) 2020-2022 under [CC0 1.0 Universal](https://github.com/trickypr/bom-weather-docs/blob/main/LICENSE).
