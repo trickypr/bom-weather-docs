@@ -55,6 +55,26 @@ interface ForecastRequest {
 }
 ```
 
+Values for icon_descriptor include, but are not limited to:
+- 'clear': Clear sky, typically indicating no clouds.
+- 'sunny': Bright and sunny conditions.
+- 'mostly_sunny': Predominantly sunny with some clouds.
+- 'partly_cloudy': A mix of sun and clouds.
+- 'cloudy': Overcast or cloudy skies.
+- 'rain': Rainy conditions.
+- 'shower': Intermittent or light rain showers.
+- 'light_rain': Light rainfall.
+- 'heavy_shower': Heavy rain showers.
+- 'storm': Stormy conditions, possibly with thunder.
+- 'cyclone': Cyclonic conditions or hurricanes.
+- 'windy': Strong winds.
+- 'hazy': Haze conditions, typically indicating reduced visibility.
+- 'fog': Foggy conditions, indicating very low visibility.
+- 'dusty': Dusty weather conditions.
+- 'frost': Frosty conditions, often with ice formation.
+- 'snow': Snowy conditions.
+
+
 ### Example output
 [Jump to finish](#3-hourly)
 
